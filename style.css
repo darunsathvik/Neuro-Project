@@ -1,0 +1,103 @@
+/* Base styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #121212, #1f1f1f);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Title styling */
+h1 {
+  margin: 20px 0;
+  color: #00ffcc;
+  font-size: 2.5rem;
+  text-shadow: 0 0 8px #00ffcc88;
+}
+
+/* Canvas with glow */
+canvas {
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+  margin: 20px auto;
+}
+
+/* Flex container for canvas */
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Button bar layout */
+.button-bar {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 800px;
+  padding: 10px;
+}
+
+/* Buttons with interactive effects */
+.button-bar button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #00ffcc, #00c3a6);
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffcc99;
+}
+
+.button-bar button:hover {
+  background: linear-gradient(135deg, #00c3a6, #00ffcc);
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00ffcccc;
+}
+
+.button-bar button:active {
+  transform: scale(0.96);
+  box-shadow: 0 0 10px #009e89;
+}
+
+/* Status display */
+.status-bar {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc88;
+}
+
+/* Optional: Add animations */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 5px #00ffcc;
+  }
+  50% {
+    box-shadow: 0 0 15px #00ffcc;
+  }
+  100% {
+    box-shadow: 0 0 5px #00ffcc;
+  }
+}
+
+.button-bar button.party-mode-active {
+  animation: pulse-glow 1s infinite;
+  background: linear-gradient(135deg, #ff00cc, #6600ff);
+  color: white;
+}
+
+p {
+  margin-top: -10px;
+  color: #ccc;
+  font-size: 14px;
+}

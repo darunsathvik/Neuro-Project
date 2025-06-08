@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎨 Pose Draw</title>
+  <style>
+    body { margin: 0; background: black; color: white; font-family: sans-serif; }
+    .canvas-container { display: flex; justify-content: center; margin-top: 10px; }
+    button { position: absolute; top: 10px; right: 10px; padding: 10px; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ml5@0.12.2/dist/ml5.min.js"></script>
+</head>
+<body>
+  <h1 style="text-align: center;">🖍️ Draw with Pose</h1>
+  <div class="canvas-container" id="canvasContainer"></div>
+  <button onclick="clearCanvas()">🧽 Clear</button>
+  <script src="drawpose.js"></script>
+</body>
+</html>

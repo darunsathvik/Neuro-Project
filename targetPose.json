@@ -1,0 +1,11 @@
+{
+  "keypoints": [
+    { "position": { "x": 320, "y": 100 } },
+    { "position": { "x": 300, "y": 150 } },
+    { "position": { "x": 340, "y": 150 } },
+    { "position": { "x": 280, "y": 200 } },
+    { "position": { "x": 360, "y": 200 } },
+    { "position": { "x": 260, "y": 250 } },
+    { "position": { "x": 380, "y": 250 } }
+  ]
+}
